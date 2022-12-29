@@ -6,6 +6,8 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const { v4: uuidv4 } = require("uuid");
 
+const PORT = 8080
+
 const io = new Server(server, {
   cors: {
     origin: "*",
@@ -50,6 +52,6 @@ io.on('connection', (socket) => {
   console.log('a user connected');
 });
 
-server.listen(8080, () => {
-  console.log('listening on *:8080');
+server.listen(PORT, () => {
+  console.log(`listening on *:${PORT}`);
 });
