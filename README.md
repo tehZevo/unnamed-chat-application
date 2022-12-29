@@ -6,6 +6,10 @@
 - unit tests because those are cool
 - typescript
 - hashicon-like fingerprint validation on frontend
+- permissions system
+- voice/video chat
+- https://sequelize.org/docs/v6/other-topics/transactions/
+- dockerfile / docker compose example
 
 ## Ideas/vision
 - accounts are just pubkeys
